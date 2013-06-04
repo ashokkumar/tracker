@@ -3,11 +3,12 @@ package com.example.location;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.location.Location;
 import android.location.LocationManager;
+import android.preference.PreferenceManager;
 import android.util.Log;
-import com.apb.beacon.ApplicationSettings;
-import com.apb.beacon.common.Intents;
+import com.google.gson.Gson;
 
 public class LocationUpdateReceiver extends BroadcastReceiver {
     private static final String TAG = LocationUpdateReceiver.class.getName();
@@ -17,19 +18,19 @@ public class LocationUpdateReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        if(intent.getAction().equals(Intents.LOCATION_UPDATE_ACTION)) {
-            this.context = context;
-            processNewLocation(intent);
-        }
+        this.context = context;
+        Location location = processNewLocation(intent);
+        System.out.println("Location :- " +  location.getLatitude() + " - " + location.getLongitude());
     }
 
-    private void processNewLocation(Intent intent) {
+    private Location processNewLocation(Intent intent) {
         Location newLocation = (Location)intent.getExtras().get(LocationManager.KEY_LOCATION_CHANGED);
-        if(newLocation == null) { return; }
+        if(newLocation == null) { return getCurrentBestLocation(); }
         Log.i(TAG, "Received location : " + newLocation.getProvider() + ", Accuracy : " + newLocation.getAccuracy());
         if(isBetterLocation(newLocation)) {
             setCurrentBestLocation(newLocation);
         }
+        return getCurrentBestLocation();
     }
 
     private boolean isBetterLocation(Location location) {
@@ -68,10 +69,11 @@ public class LocationUpdateReceiver extends BroadcastReceiver {
     }
 
     Location getCurrentBestLocation() {
-        return ApplicationSettings.getCurrentBestLocation(context);
+        return new Gson().fromJson(PreferenceManager.getDefaultSharedPreferences(context).getString("LOCATION", null),Location.class);
     }
 
     void setCurrentBestLocation(Location location) {
-        ApplicationSettings.setCurrentBestLocation(context, location);
+        SharedPreferences.Editor preferences = PreferenceManager.getDefaultSharedPreferences(context).edit();
+        preferences.putString("LOCATION", new Gson().toJson(location));
     }
 }
