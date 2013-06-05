@@ -18,11 +18,5 @@
         </activity>
         <service android:name=".service.LocationService" android:exported="false"/>
 
-        <receiver android:name=".location.LocationUpdateReceiver" android:enabled="true" android:exported="false">
-            <intent-filter>
-                <action android:name="com.apb.beacon.LOCATION_UPDATE_ACTION"/>
-            </intent-filter>
-        </receiver>
-
     </application>
 </manifest> 

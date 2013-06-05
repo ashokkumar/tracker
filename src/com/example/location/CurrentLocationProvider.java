@@ -1,29 +1,40 @@
 package com.example.location;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationManager;
+import android.preference.PreferenceManager;
+import com.google.gson.Gson;
 
 import static android.location.LocationManager.GPS_PROVIDER;
 import static android.location.LocationManager.NETWORK_PROVIDER;
 
 public class CurrentLocationProvider extends LocationListenerAdapter {
-    private Location currentLocation;
+    public static final String LOCATION = "LOCATION";
+    public static final int MIN_TIME = 1000 * 30;
+    public static final int MIN_DISTANCE = 1;
+    private Context context;
 
     public CurrentLocationProvider(Context context) {
+        this.context = context;
         LocationManager locationManager = (LocationManager) context.getSystemService(Context.LOCATION_SERVICE);
-        currentLocation = locationManager.getLastKnownLocation(locationManager.getBestProvider(new Criteria(), false));
-        locationManager.requestLocationUpdates(NETWORK_PROVIDER, 1000 * 30, 0, this);
-        locationManager.requestLocationUpdates(GPS_PROVIDER, 1000 * 30, 0, this);
+        setCurrentBestLocation(locationManager.getLastKnownLocation(locationManager.getBestProvider(new Criteria(), false)));
+        locationManager.requestLocationUpdates(NETWORK_PROVIDER, MIN_TIME, MIN_DISTANCE, this);
+        locationManager.requestLocationUpdates(GPS_PROVIDER, MIN_TIME, MIN_DISTANCE, this);
     }
 
     @Override
     public void onLocationChanged(Location location) {
-        currentLocation = location;
+        setCurrentBestLocation(location);
+        System.out.println("Location :- " +  location.getLatitude() + " - " + location.getLongitude());
     }
 
-    public Location getLocation() {
-        return currentLocation;
+    void setCurrentBestLocation(Location location) {
+        SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(context).edit();
+        editor.putString(LOCATION, new Gson().toJson(location));
+        editor.commit();
     }
+
 }
