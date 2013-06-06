@@ -12,16 +12,15 @@
     </option>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="Location" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="LOCATION" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="INFO" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d0820d1-41e5-4626-8e0f-695116f4dd39" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/example/location/LocationUpdateReceiver.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/example/service/SendLocationAsyncTask.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/location/CurrentLocationProvider.java" afterPath="$PROJECT_DIR$/src/com/example/location/CurrentLocationProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/service/LocationService.java" afterPath="$PROJECT_DIR$/src/com/example/service/LocationService.java" />
     </list>
     <ignored path="tracker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,11 +87,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CurrentLocationProvider.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SendLocationAsyncTask.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/example/service/SendLocationAsyncTask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="0" selection-start="624" selection-end="624" vertical-scroll-proportion="-0.23529412">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#926#941#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/MyActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="8" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CurrentLocationProvider.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/location/CurrentLocationProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="49" selection-start="1249" selection-end="1249" vertical-scroll-proportion="0.39148352">
-              <folding />
+            <state line="34" column="58" selection-start="1559" selection-end="1559" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -109,7 +131,7 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="961" selection-end="961" vertical-scroll-proportion="0.0">
+            <state line="9" column="74" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -136,7 +158,7 @@
       <file leaf-file-name="workspace.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="61" selection-start="2146" selection-end="2146" vertical-scroll-proportion="0.0">
+            <state line="38" column="61" selection-start="1993" selection-end="1993" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -156,14 +178,15 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
-        <option value="$PROJECT_DIR$/src/com/example/MyActivity.java" />
         <option value="$PROJECT_DIR$/src/com/tracker/MyActivity.java" />
         <option value="$PROJECT_DIR$/src/com/tracker/service/LocationService.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/com/example/location/LocationUpdateReceiver.java" />
         <option value="$PROJECT_DIR$/src/com/example/service/LocationService.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/MyActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/location/CurrentLocationProvider.java" />
+        <option value="$PROJECT_DIR$/src/com/example/service/SendLocationAsyncTask.java" />
       </list>
     </option>
   </component>
@@ -198,6 +221,30 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -330,30 +377,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -371,9 +394,10 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="MyAvd0" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -541,7 +565,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -551,8 +575,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4993565" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4993565" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -627,11 +651,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/example/MyActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="7" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="49" selection-start="457" selection-end="457" vertical-scroll-proportion="0.0" />
@@ -640,6 +659,16 @@
     <entry file="jar://$ANDROID_HOME$/platforms/android-16/android.jar!/android/location/Location.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="13" selection-start="154" selection-end="154" vertical-scroll-proportion="0.08391608" />
+      </provider>
+    </entry>
+    <entry file="jar://$ANDROID_HOME$/platforms/android-14/android.jar!/android/location/LocationManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="38" selection-start="1445" selection-end="1467" vertical-scroll-proportion="0.33333334" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/location/LocationListenerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gen/com/example/BuildConfig.java">
@@ -654,41 +683,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="61" selection-start="2146" selection-end="2146" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$ANDROID_HOME$/platforms/android-14/android.jar!/android/location/LocationManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="38" selection-start="1445" selection-end="1467" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/location/LocationListenerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="961" selection-end="961" vertical-scroll-proportion="0.0">
+        <state line="38" column="61" selection-start="1993" selection-end="1993" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/service/LocationService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="5" selection-start="814" selection-end="814" vertical-scroll-proportion="0.0">
+        <state line="19" column="5" selection-start="814" selection-end="814" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="74" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/MyActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="8" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/location/CurrentLocationProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="49" selection-start="1249" selection-end="1249" vertical-scroll-proportion="0.39148352">
-          <folding />
+        <state line="34" column="58" selection-start="1559" selection-end="1559" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/service/SendLocationAsyncTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="624" selection-end="624" vertical-scroll-proportion="-0.23529412">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#926#941#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
