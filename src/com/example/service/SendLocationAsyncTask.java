@@ -18,7 +18,7 @@ public class SendLocationAsyncTask extends AsyncTask{
     @Override
     protected Object doInBackground(Object... params) {
         HttpClient httpClient = new DefaultHttpClient();
-        HttpPost httpPost = new HttpPost("http://10.16.3.96:3000/gps_tracker");
+            HttpPost httpPost = new HttpPost("http://location-tracker.herokuapp.com/gps_tracker");
         Location location = (Location) params[0];
         String imei = (String) params[1];
         try {
