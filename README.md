@@ -5,20 +5,25 @@ Create a service that accepts the necessary information of an email.
 
 __Table of Contents__
 
-- [Overview](#Overview)
+- [Overview](#overview)
 
 - [Documentation](#documentation)
   - [Install](#install)
-  - [Setup Environment](#setup-environment)
-  - [Usage Overview](#usage-overview)
-  - [POST Request Example](#post-request-example)
+    - [Steps](#steps)
+    - [Without docker](#without-docker)
+    - [With docker](#without-docker)
   - [API Details](#api-details)
+    - [Endpoint](#endpoint)
+    - [Example](#example)
+      - [Params](#params)
+      - [CURL command](#curl-command)
+      - [Response](#response)
 
 - [Development](#development)
   - [Notes](#notes)
-  - [TODO](#TODO)
-    - [Operational](#Operational)
-    - [Features](#Features)
+  - [TODO](#todo)
+    - [Operational](#operational)
+    - [Features](#features)
 
 # Overview
 
@@ -67,7 +72,8 @@ This app accepts the minimal necessary data required to send an email in JSON fo
 | body     | String  | No| body of the email
 | sendAt   | Int (> 0) | Yes | A valid unix timestamp
         
-### Example params
+## Example 
+### Params
 ```json
 { 
    "from":"asdtest123@gmail.com",
@@ -87,7 +93,7 @@ This app accepts the minimal necessary data required to send an email in JSON fo
 }    
 ```
      
-### Example CURL command
+### CURL command
 
 ```sh
 curl -i --request POST \
@@ -155,7 +161,7 @@ curl -i --request POST \
     }
     ```
 
-#Development
+# Development
 
 ## Notes
 - To run test `mvn test`
