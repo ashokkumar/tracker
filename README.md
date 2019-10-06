@@ -15,12 +15,10 @@ __Table of Contents__
   - [API Details](#api-details)
 
 - [Development](#development)
-  - [Directory Structures](#directory-structures)
-  - [Problems And Solutions](#problems-and-solutions)
-  - [Deployment](#deployment)
-  - [Tests](#tests)
-  - [TODO List](#todo-list)
-  - [Design Optimising](#design-optimising)
+  - [Notes](#notes)
+  - [TODO](#TODO)
+    - [Operational](#Operational)
+    - [Features](#Features)
 
 # Overview
 
